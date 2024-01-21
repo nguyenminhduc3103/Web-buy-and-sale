@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <nav>
+        <img src="pixlr-bg-result.png" id="logo" alt="">
+        <div id="menu">
+            <a href="file:///C:/Web/BT/gamingproduct.html" class="item">MAIN PAGE </a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()" style="font-family:'Times New Roman', Times, serif">PRODUCTS
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="file:///C:/Web/BT/controllers.html">CONTROLLERS</a>
+                <a href="file:///C:/Web/BT/playstatin&xbox.html">PLAYSTATION & XBOX</a>
+                <a href="file:///C:/Web/BT/mouse.html">MOUSE</a>
+              </div>
+            </div>
+            <a href="" class="item"><i id = "ic1" class="far fa-shopping-cart"></i> </a>
+            <a href="file:///C:/Web/BT/feedback.html" class="item">FEEDBACK </a>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");}
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+    </script>
+    
+    <div>
+        <p id="title">Một số thông tin về sản phẩm và các tính năng của chúng</p>
+        <div>
+            <div id="intro">
+                <p id="name"></p>
+                <div id="order">
+                    <button id="features1"></button>
+                    <p id="price"></p>
+                </div>
+            </div>
+            <div id="info">
+                <img id="avatar" alt="" >
+                <div id="feature-in4">
+                    <p id="features2"></p>
+                    <p id="features3"></p>
+                    <p id="features4"></p>
+                    <p id="features5"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+      let champ_data;
+      let queryString = window.location.search
+      const urlParams = new URLSearchParams(queryString);
+      x = urlParams.get("id")
+      document.addEventListener("DOMContentLoaded", async () => {
+        let data = await fetch("https://61053d754b92a000171c5e56.mockapi.io/api/duc/products/" + x)
+        data = await data.json()
+        console.log(data)
+        document.getElementById("name").textContent = data.name
+        document.getElementById("avatar").src = data.avatar
+        document.getElementById("price").textContent = data.price + "$"
+        document.getElementById("features1").textContent = data.features1
+        document.getElementById("features2").textContent = data.features2
+        document.getElementById("features3").textContent = data.features3
+        document.getElementById("features4").textContent = data.features4
+        document.getElementById("features5").textContent = data.features5 
+      })
+    </script>
+
+    <footer>
+        <div id="contactinfo">
+            <span id="infotitle">Contact info</span>
+            <div id="address">
+                <i class="fas fa-map-marker-alt" style="color: white;"></i>
+                <span class="contact-cont">XXXXXXXXXXXXXX, Hà Nội</span>
+            </div>
+            <div id="email">
+                <i class="far fa-envelope" style="color: white;"></i>
+                <span class="contact-cont">XXXXXXXXXXXXX</span>
+            </div>
+            <div id="number">
+                <i class="fas fa-phone" style="color: white;"></i>
+                <span class="contact-cont">XXXXXXXXXX</span>
+            </div>
+        </div>
+        <span id="copyright">Nguyễn Minh Đức</span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,290 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 90px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: black;
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: -18px;
+    
+}
+#menu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-right: 25px;
+    width: 50%;
+}
+.item{
+    color: white;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 11px;
+}
+.dropbtn {
+    cursor: pointer;
+    font-size: 17px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+} 
+.show {
+    display: block;
+}
+#title{
+    text-align: center;
+    font-size: 45px;
+}
+#vid-intro{
+    width: 60%;
+    margin-left: 60px;
+}
+#img-sale1{
+    width: 300px;
+}
+#img-sale2{
+    width: 260px;
+    margin-left: 20px;
+}
+#Intro{
+    display: flex;
+    flex-direction: row;
+}
+#Intro-sale{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 70px;
+}
+#part2-title{
+    text-align: center;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#slide-img1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#slide-img3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#img4{
+  margin-left: 2.23%;
+}
+#img5{
+  margin-left: 2.23%;
+}
+#img6{
+  margin-left: 2.23%;
+}
+#img7{
+  margin-left: 2.23%;
+}
+#img8{
+  margin-left: 2.23%;
+}
+#img1{
+  margin-left: 2.23%;
+}
+#custom1{
+  margin-left: 2.23%;
+}
+#custom2{
+  margin-left: 2.23%;
+}
+.coupon {
+  border: 5px dotted #bbb;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container2 {
+  padding: 0px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+#coupon1{
+  margin-left: 333px;
+  margin-top: -439px;
+}
+#coupon2{
+  margin-left: 666px;
+  margin-top: -439px;
+}
+#coupon3{
+  margin-left: 999px;
+  margin-top: -439px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+#part3{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#card{
+  margin-top: 65px;
+}
+
+#part3{
+  margin-top: 30px;
+}
+footer{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 30px 80px;
+  box-sizing: border-box;
+  background-color: #161615;
+}
+#infotitle{
+  color: white;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.contact-cont{
+  color: white;
+  margin-left: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 20px;
+}
+#copyright{
+  align-self: flex-end;
+  color: white;
+  align-self: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
